@@ -1,6 +1,179 @@
-body {
-  color: red;
+/*import font*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,900;1,900&display=swap');
+
+*, body {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    
 }
-h1 {
-  color: blue;
+
+
+header {
+    
+    position: fixed;
+    top: 0;
+    justify-content: space-evenly;
+    text-align: left;
+	padding: 25px 20px;
+	width: 100%;
+	height: 80px;
+	background-color: #000;
+    z-index: 100;
+}
+
+.sidebar {
+    left: -260px;
+    top: 80px;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #1b1b1b;
+    transition: left 0.4s ease;
+}
+.sidebar.show {
+    left: -15px;
+}
+.sidebar .text {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    background: #1b1b1b;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+nav ul li a:hover {
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+
+.btn-group {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background: #000;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: white;
+    border: 1px solid white;
+    transition: left 0.4s ease;
+}
+.btn-group.click {
+    left: 30px;
+}
+.btn-group span {
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+.btn-group.click span::before {
+    content: '\f00d';
+}
+
+.brand {
+    position: fixed;
+    top: 30px;
+    left: 130px;
+    margin-top: ;
+    text-align: center;
+	font-size: 25px;
+	color: #00d4ff;
+    cursor: pointer;
+    
+}
+
+header .searchbox {
+    top: 25px;
+    left: 350px;
+    position: fixed;
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+    width: 40%;
+    font-size: .75rem;
+    margin-bottom: 45px;
+}
+
+header #search {
+    border: none;
+    outline: none;
+    background: #fff;
+    height: 100%;
+    font-size: 15px;
+    padding: 0 10px;
+    width: 310px;
+}
+
+header h2 {
+    margin-top: 0px;
+    color: white;
+    font-size: 25px;
+}
+#go {
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+#navtext {
+    top: 25px;
+    right: 200px;
+    position: fixed;
+    margin: auto 0;
+	list-style: none;
+	display: flex;
+    justify-content: space-between;
+    text-align: center;
+	
+}
+#navtext li {
+   
+    margin: 0 10px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    
+}
+#navtext li a {
+    top: 25px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 0px;
+    padding: 5px 5px;
+    justify-content: space-between;
+}
+#navtext li a:hover {
+    color: #00d4ff;
+}
+#up {
+    cursor: pointer;
 }
